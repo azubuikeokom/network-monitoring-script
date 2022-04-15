@@ -1,6 +1,7 @@
 import ezgmail
 from netmiko import ConnectHandler
 import json
+import socket
 
 def ping_test(link_maps):
     reachable=set()
@@ -33,8 +34,13 @@ def config_link(hosts,links):
 
 """program starts here"""
 #connect to router via ssh
-device = ConnectHandler(device_type='huawei', ip='41.203.66.21', username='dcnsupport', password='Seen@S0rt1!') 
-#device = ConnectHandler(device_type='huawei', ip='10.98.70.4', username='huawei', password='IPc0re!pMpls')
+try:
+    device = ConnectHandler(device_type='huawei', ip='x.x.x.x', username='jon_doe', password='don_joe') 
+except:
+    f=open('connection_log.txt','a')
+    f.write("Couldn't connect to router at x.x.x.x")
+    f.close()
+    device = ConnectHandler(device_type='huawei', ip='x.x.x.x', username='jon_doe', password='don_joe')
 device.send_command("n")    
 hosts=['10.98.70.4','10.98.65.87','10.98.65.97','10.98.23.172','10.98.65.182','10.98.12.120','10.98.12.121','10.98.65.178']
 links=json.load(open("router_links.json"))
