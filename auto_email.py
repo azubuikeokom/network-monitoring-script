@@ -26,14 +26,7 @@ def ping_test(link_maps):
     #send email of link status
     ezgmail.send("azubuikeokom@gmail.com","Network report",
     "The following links are currently DOWN:\n {}".format(not_reachable))
-    
 
-def config_link(hosts,links):
-    host=input("Enter host ip")
-    link_ip=input("Enter ip of link")
-    link_name=input("Enter name of link eg 10G NNE003 to ONT009")
-    hosts.append(host)
-    links[link_ip]=link_name
 
 """program starts here"""
 #connect to router via ssh
