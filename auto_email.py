@@ -1,4 +1,4 @@
-import ezgmail
+# import ezgmail
 from netmiko import ConnectHandler
 import json
 from datetime import datetime
@@ -20,12 +20,14 @@ def ping_test(link_maps):
     #convert list to strng and use carriage return as delimiters        
     reachable='\n'.join(reachable)    
     not_reachable='\n'.join(not_reachable)     
-    #print("The following links are currently UP:\n {}".format(reachable))
+    f=open("failure_report.txt",'a')
+    f.write("\nThe following links are currently DOWN at {}:\n {}".format(datetime.now(),not_reachable))
+    f.close()
     print("The following links are currently DOWN:\n {}".format(not_reachable))
 
     #send email of link status
-    ezgmail.send("azubuikeokom@gmail.com","Network report",
-    "The following links are currently DOWN:\n {}".format(not_reachable))
+    # ezgmail.send("azubuikeokom@gmail.com","Network report",
+    # "The following links are currently DOWN:\n {}".format(not_reachable))
 
 
 """program starts here"""
@@ -44,4 +46,3 @@ ping_test(links)
 device.disconnect()
 
 #ezgmail.init()
-#print("program completed") 

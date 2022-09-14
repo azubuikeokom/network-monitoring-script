@@ -1,0 +1,12 @@
+The following links are currently DOWN:
+ 100G ENUGU to PHC
+10G LKJ003 to ABUJA
+20G ONT009 to OWERRIThe following links are currently DOWN:
+ ENUGU to UER806
+10G LKJ003 to ABUJA
+100G ENUGU to PHC
+20G ONT009 to OWERRIThe following links are currently DOWN:
+ ENUGU to UER806
+20G ONT009 to OWERRI
+100G ENUGU to PHC
+10G OLR002 to BENIN
