@@ -1,9 +1,0 @@
-#connection logs............
-Couldn't connect to router at 2022-07-28 11:23:53.030323 at 41.203.66.21 
-Couldn't connect to router at 2022-08-01 11:54:45.492585 at 41.203.66.21 
-Couldn't connect to router at 2022-08-26 09:06:40.804694 at 41.203.66.21 
-Couldn't connect to router at 2022-08-26 09:19:42.620051 at 41.203.66.21 
-Couldn't connect to router at 2022-09-05 11:28:11.020026 at 41.203.66.21 
-Couldn't connect to router at 2022-09-14 11:57:11.245801 at 41.203.66.21 
-Couldn't connect to router at 2022-09-14 12:02:50.051227 at 41.203.66.21 
-Couldn't connect to router at 2022-09-14 13:28:10.534426 at 41.203.66.21 

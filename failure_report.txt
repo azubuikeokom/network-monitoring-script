@@ -10,3 +10,9 @@ The following links are currently DOWN:
 20G ONT009 to OWERRI
 100G ENUGU to PHC
 10G OLR002 to BENIN
+The following links are currently DOWN at 2022-09-14 14:23:30.627996:
+ 100G ENUGU to PHC
+ENUGU to UER806
+The following links are currently DOWN at 2022-09-14 14:25:54.136457:
+ ENUGU to UER806
+100G ENUGU to PHC

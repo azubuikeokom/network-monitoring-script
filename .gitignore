@@ -3,4 +3,5 @@ credentials.json
 token.json
 routers.json
 auto_backup.py
+connection_log.txt
  
